@@ -13,7 +13,7 @@ import hammett as ham
 from ham import experim_data
 ```
  
-## Initial data 
+### Initial data 
  
 The data should be stored in a Pandas Dataframe structure, similar to the one provided as example
  
