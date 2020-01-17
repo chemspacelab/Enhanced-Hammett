@@ -21,12 +21,12 @@ The data should be stored in a Pandas Dataframe structure, similar to the one pr
 data = ham.experim_data
 ham.data_show()
 ```
-A $\rho$ will be calculated for each columns and a $\sigma$ for each row. Missing values can be handled, but they should be represented by np.NaN. There should be at least two datapoints per column in order to get the corresponding $\rho$.
+A $`\rho`$ will be calculated for each columns and a $`\sigma`$ for each row. Missing values can be handled, but they should be represented by np.NaN. There should be at least two datapoints per column in order to get the corresponding `$\rho`$.
 The example reports kinetic constants for substituted thiols (rows) which react with different benzylbromides (columns).
  
 ### Find parameters
 
-The `calc_param` function will compute a the values of $\sigma$, $\rho$ and $\k_0$.
+The `calc_param` function will compute a the values of $`\sigma`$, $`\rho`$ and $`\k_0`$.
 
 ```python
 rho, sigma, k0, dicrho, dicsigma, dick0 = ham.calc_params(data)
@@ -40,7 +40,7 @@ prediction = ham.evaluate(data)
 ```
 
 ### Visualization
-To visualize the quality of the prediction you can use the 'plot_correlation' function
+To visualize the quality of the prediction you can use the `plot_correlation` function
 
 ```python
 ham.plot_correlation(data, prediction)
