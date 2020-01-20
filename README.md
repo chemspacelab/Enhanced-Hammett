@@ -10,7 +10,6 @@ First of all import the library and the example dataset with it.
 
 ```python
 import hammett as ham
-from ham import experim_data
 ```
  
 ### Initial data 
@@ -18,8 +17,7 @@ from ham import experim_data
 The data should be stored in a Pandas Dataframe structure, similar to the one provided as example
  
 ```python
-data = ham.experim_data
-ham.data_show()
+data = ham.get_experimental_data_Hudson_1962
 ```
 A $`\rho`$ will be calculated for each columns and a $`\sigma`$ for each row. Missing values can be handled, but they should be represented by np.NaN. There should be at least two datapoints per column in order to get the corresponding `$\rho`$.
 The example reports kinetic constants for substituted thiols (rows) which react with different benzylbromides (columns).
